@@ -19,4 +19,5 @@ if __name__ == '__main__':
     third = Node(3)
     llist.head.next = second
     second.next = third
+    #print(llist.head.data)
 
