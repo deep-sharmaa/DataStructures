@@ -25,14 +25,26 @@ class LinkedList:
             tmp = tmp.next
         print(count)
 
+    # This function counts number of nodes in Linked List
+    # iteratively, given 'node' as starting node.
+    def getCount(self):
+        temp = self.head  # Initialise temp
+        count = 0  # Initialise count
+
+        # Loop while end of linked list is not reached
+        while (temp):
+            count += 1
+            temp = temp.next
+        return count
+
     def getCountRec(self, node): #recursion
         if (not node):  # Base case
             return 0
         else:
             return 1 + self.getCountRec(node.next)
 
-    def getCount(self):
-        return self.getCountRec(self.head)
+    # def getCount(self):
+    #     return self.getCountRec(self.head)
 
 if __name__ == '__main__':
 

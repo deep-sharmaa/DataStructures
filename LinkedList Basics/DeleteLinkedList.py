@@ -43,6 +43,26 @@ class LinkedList:
 
         tmp = None
 
+    def DeleteNodeatPosition(self, position):
+        if position is None:
+            return
+
+        if position == 0:
+            if self.head is not None:
+                self.head = self.head.next
+                return
+
+        prev = self.head
+        count = 0
+        while prev.next is not None:
+            nxt = prev.next
+            count += 1
+            if count == position:
+                prev.next = nxt.next
+                break
+            prev = nxt
+        print("Done deletion")
+
 
 if __name__ == '__main__':
     llist = LinkedList()
@@ -60,6 +80,7 @@ if __name__ == '__main__':
     llist.push(21)
 
     llist.printList()
-    llist.DeleteNode(34)
+  #  llist.DeleteNode(34)
+    #llist.DeleteNodeatPosition(2)
     print("checking after deleting")
     llist.printList()
