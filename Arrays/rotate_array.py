@@ -47,8 +47,20 @@ for i in range(d - 1, 0, -1):
          
 cc[0] = x;
 
-print(cc)
+# print(cc)
 
+
+#another solution by using slicing
+
+array = [1, 2, 3, 4, 5]
+d = len(array)
+
+print(array[-1:])
+print(array[:-1])
+
+array[:] = array[-1:]+array[:-1]
+
+print(array)
 
 
 
