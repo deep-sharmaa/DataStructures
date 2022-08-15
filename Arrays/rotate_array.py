@@ -7,22 +7,50 @@
 # Output: 5 6 7 1 2 3 4
 
 a = [1, 2, 3, 4, 5, 6, 7]
-d = 3
+d = 2
 
-# c = a[2:]
-# v = a[:2]
+#first solution
 
+# c = a[d:] + a[:d]
 
-# c.extend(v)
 # print(c)
 
 
-i = 1
+# second solution
 
-while i <= d:
-    first_ele = a[0]
-    a.remove(first_ele)
-    a.append(first_ele)
-    i += 1
+# i = 1
 
-print(a)
+# while i <= d:
+#     first_ele = a[0]
+#     a.remove(first_ele)
+#     a.append(first_ele)
+#     i += 1
+
+# print(a)
+
+
+
+# Program to cyclically rotate an array by one [Imp one]
+
+# Given an array, cyclically rotate the array clockwise by one. 
+
+# Input:  arr[] = {1, 2, 3, 4, 5}
+# Output: arr[] = {5, 1, 2, 3, 4}
+
+cc = [1, 2, 3, 4, 5]
+d = len(cc)
+
+x = cc[d - 1]
+     
+for i in range(d - 1, 0, -1):
+    cc[i] = cc[i - 1];
+         
+cc[0] = x;
+
+print(cc)
+
+
+
+
+
+
