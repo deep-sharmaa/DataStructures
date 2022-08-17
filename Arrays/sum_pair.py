@@ -27,7 +27,7 @@ x = 21
 #             print(arr[i], arr[j])
 
 
-# solution 3
+# solution 3 (The time complexity of the above solution is O(n) and requires O(n) extra space, where n is the size of the input.)
 
 myDict = {} # {11:1, 5:2, }
 
