@@ -29,11 +29,11 @@ x = 21
 
 # solution 3 (The time complexity of the above solution is O(n) and requires O(n) extra space, where n is the size of the input.)
 
-myDict = {} # {11:1, 5:2, }
+myDict = {}  # {11:1, 5:2, }
 
 for i, e in enumerate(arr):
 
-    key = x - e # 11
+    key = x - e  # 11
 
     if key in myDict:
         print(key, e )
