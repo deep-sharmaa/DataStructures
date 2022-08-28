@@ -43,7 +43,7 @@ class LinkedList:
         tmp = self.head
         print("i am in")
         while tmp:
-            print(tmp.data)
+            print(tmp.data, end=' ')
 
             tmp = tmp.next
 
