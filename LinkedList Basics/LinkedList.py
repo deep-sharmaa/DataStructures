@@ -13,16 +13,26 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
+    def printList(self):  # to print all elements inside the linkedlist
+        temp = self.head
+        while temp:
+            print(temp.data)
+            temp = temp.next
+
 
 if __name__ == '__main__':
 
     llist = LinkedList()
     llist.head = Node(1)
-    second = Node(2)
+    print('llist.head')
+    # print(llist.head.next)
+    second = Node(5)
     third = Node(3)
     llist.head.next = second
     second.next = third
+
     print(llist.head.data)
-    print(llist.head.next.data)
     print(second.next.data)
+
+    llist.printList()
 
